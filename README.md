@@ -99,6 +99,35 @@ npm start
 5. Navigate to the frontend directory, install dependencies, and start the frontend server:
 npm run dev
 
+## API TESTING WITH POSTMAN 
+All authentication endpoints in this project were tested using Postman to verify request handling, authentication flow, and response structure.
+## Login API Test
+## Endpoint
+POST /api/auth/login
+## Description
+This endpoint authenticates an existing user and returns a JWT token along with basic user details. The token is required to access protected routes.
+## Request Configuration (Postman)
+Method: POST
+URL: http://localhost:5000/api/auth/login
+Headers:
+Content-Type: application/json
+Body (raw JSON):
+{
+  "email": "mansha@test.com",
+  "password": "mypassword123"
+}
+Successful Response
+{
+  "token": "JWT_TOKEN",
+  "user": {
+    "id": "695e10f762b8f1147cb83215",
+    "name": "Mansha",
+    "email": "mansha@test.com",
+    "role": "user"
+  }
+}
+<img width="1915" height="1072" alt="postman c" src="https://github.com/user-attachments/assets/8859ed0d-46e7-49b5-9b6d-7d24442ddd3f" />
+
 ## Use Cases
 * Learning authentication fundamentals
 * Starter template for web applications
@@ -113,3 +142,4 @@ npm run dev
 ## Conclusion
 This project provides a clear and practical implementation of user authentication in a full-stack environment. 
 It emphasizes security, modularity, and clarity, making it suitable both for learning purposes and as a base for production-ready applications.
+
