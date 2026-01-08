@@ -28,32 +28,8 @@ This repository is intended for learners and developers who want a clean, practi
 * Simple UI for user interaction (register, login, protected views)
 
 ## Project Structure
-user_auth_app/
-│
-├── backend/
-│   ├── src/
-│   │   ├── config/
-│   │   │   └── db.js            # Database connection
-│   │   ├── controllers/         # Request handling logic
-│   │   ├── models/              # Mongoose schemas
-│   │   ├── routes/              # API route definitions
-│   │   ├── middleware/          # Authentication & route protection
-│   │   └── app.js               # Express app configuration
-│   │
-│   ├── server.js                # Server entry point
-│   ├── .env                     # Environment variables
-│   ├── package.json
-│   └── package-lock.json
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/          # UI components
-│   │   ├── services/            # API service calls
-│   │   └── App.js               # Main frontend entry
-│   └── package.json
-│
-└── README.md
+<img width="828" height="657" alt="image" src="https://github.com/user-attachments/assets/54f6ab89-edd7-4a88-9bdb-8a861f7dae60" />
+
 
 ## Backend Explanation
 
@@ -147,5 +123,6 @@ Successful Response
 ## Conclusion
 This project provides a clear and practical implementation of user authentication in a full-stack environment. 
 It emphasizes security, modularity, and clarity, making it suitable both for learning purposes and as a base for production-ready applications.
+
 
 
