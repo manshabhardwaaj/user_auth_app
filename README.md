@@ -109,13 +109,17 @@ This endpoint authenticates an existing user and returns a JWT token along with 
 ## Request Configuration (Postman)
 Method: POST
 URL: http://localhost:5000/api/auth/login
+
 Headers:
+
 Content-Type: application/json
+
 Body (raw JSON):
 {
   "email": "mansha@test.com",
   "password": "mypassword123"
 }
+
 Successful Response
 {
   "token": "JWT_TOKEN",
@@ -126,6 +130,7 @@ Successful Response
     "role": "user"
   }
 }
+
 <img width="1915" height="1072" alt="postman c" src="https://github.com/user-attachments/assets/8859ed0d-46e7-49b5-9b6d-7d24442ddd3f" />
 
 ## Use Cases
@@ -142,4 +147,5 @@ Successful Response
 ## Conclusion
 This project provides a clear and practical implementation of user authentication in a full-stack environment. 
 It emphasizes security, modularity, and clarity, making it suitable both for learning purposes and as a base for production-ready applications.
+
 
